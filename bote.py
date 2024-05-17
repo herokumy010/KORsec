@@ -284,6 +284,9 @@ def strip(message):
 
 
 
-print('bot on line')
-bot.infinity_polling()
+while True:
+	try:
+		bot.polling(none_stop=True)
+	except Exception as e:
+		print('error')
 
